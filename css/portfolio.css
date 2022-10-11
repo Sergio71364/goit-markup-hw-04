@@ -48,6 +48,11 @@
   width: calc((100% - 2 * 30px) / 3);
 }
 
+.projects .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects .item:nth-child(-n + 6) {
   margin-bottom: 30px;
 }

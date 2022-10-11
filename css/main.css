@@ -58,6 +58,15 @@
   margin-right: 30px;
 }
 
+.features .icon {
+  width: 100%;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--lighter-background-color);
+}
+
 .features .title {
   font-size: 14px;
   line-height: 1.14;
@@ -66,42 +75,14 @@
   margin-bottom: 10px;
 }
 
-.features .item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  background-color: var(--lighter-background-color);
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-  border-radius: 4px;
-}
-
-.antenna::before {
-  background-image: url('../images/originals/antenna1.svg');
-}
-.clock::before {
-  background-image: url('../images/originals/clock1.svg');
-}
-
-.diagram::before {
-  content: '';
-  background-image: url('../images/originals/diagram1.svg');
-}
-
-.astronaut::before {
-  content: '';
-  background-image: url('../images/originals/astronaut.svg');
-}
-
 .features .text {
   font-size: 14px;
   line-height: 1.71;
 }
 
 .branches .title,
-.team .title {
+.team .title,
+.clients .title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -131,8 +112,44 @@
 
 .team .description {
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .team .details {
-  padding: 30px 0;
+  padding: 30px 32px;
+}
+
+.team .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--greyish-background-color);
+}
+
+.clients .icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--greyish-background-color);
+}
+
+.client-wrapper {
+  padding: 15px 31px;
+  border: 1px solid var(--greyish-background-color);
+  border-radius: 4px;
+}
+
+.client-wrapper:hover .icon {
+  fill: var(--accent-color);
+}
+
+.client-wrapper:hover {
+  border-color: var(--accent-color);
+}
+
+.inner-wrapper {
+  width: 106px;
+  height: 60px;
+}
+
+.inner-wrapper .icon {
+  fill: var(--greyish-background-color);
 }
