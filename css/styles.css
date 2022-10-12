@@ -65,8 +65,6 @@ body {
 }
 
 .header .icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 
@@ -126,17 +124,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.contacts-nav .link::before {
-  content: '';
-  display: block;
-  width: 16px;
-  height: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  margin-right: 10px;
 }
 
 .header .item:not(:last-child) {
@@ -253,8 +240,29 @@ body {
 }
 
 .footer .icon {
-  width: 20px;
-  height: 20px;
+  fill: var(--primary-white-color);
+}
+
+.round-wrapper {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.round-wrapper:hover,
+.round-wrapper:focus,
+.footer .round-wrapper:hover,
+.footer .round-wrapper:focus {
+  background-color: var(--accent-color);
+}
+
+.round-wrapper:hover .icon,
+.round-wrapper:focus .icon,
+.footer .round-wrapper:hover .icon,
+.footer .round-wrapper:focus .icon {
   fill: var(--primary-white-color);
 }
 
@@ -265,22 +273,6 @@ body {
 
 .footer .col:not(:last-child) {
   margin-right: 70px;
-}
-
-.round-wrapper {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.round-wrapper:hover {
-  background-color: var(--accent-color);
-}
-
-.round-wrapper:hover .icon {
-  fill: var(--primary-white-color);
 }
 
 .row {
@@ -349,8 +341,6 @@ body {
 }
 
 .features .icon {
-  width: 100%;
-  height: 120px;
   padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -410,14 +400,10 @@ body {
 }
 
 .team .icon {
-  width: 20px;
-  height: 20px;
   fill: var(--greyish-background-color);
 }
 
 .clients .icon {
-  width: 106px;
-  height: 60px;
   fill: var(--greyish-background-color);
 }
 
@@ -425,13 +411,16 @@ body {
   padding: 15px 31px;
   border: 1px solid var(--greyish-background-color);
   border-radius: 4px;
+  outline: none;
 }
 
-.client-wrapper:hover .icon {
+.client-wrapper:hover .icon,
+.client-wrapper:focus .icon {
   fill: var(--accent-color);
 }
 
-.client-wrapper:hover {
+.client-wrapper:hover,
+.client-wrapper:focus {
   border-color: var(--accent-color);
 }
 
