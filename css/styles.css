@@ -287,3 +287,228 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.hero {
+  text-align: center;
+  background-color: var(--light-background-color);
+  padding: 200px 0;
+  margin: 0 auto;
+}
+
+.hero .title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  max-width: 690px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 30px;
+}
+
+.hero .button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  padding: 10px 32px;
+  margin: 0 auto;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features .list,
+.branches .list,
+.team .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features .item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.features .item:not(:nth-of-type(4n + 4)) {
+  margin-right: 30px;
+}
+
+.branches .item:not(:last-child),
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .icon {
+  width: 100%;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--lighter-background-color);
+}
+
+.features .title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.features .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.branches .title,
+.team .title,
+.clients .title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.team {
+  background: var(--lighter-background-color);
+}
+
+.team .item {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team .name {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.team .description {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team .details {
+  padding: 30px 32px;
+}
+
+.team .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--greyish-background-color);
+}
+
+.clients .icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--greyish-background-color);
+}
+
+.client-wrapper {
+  padding: 15px 31px;
+  border: 1px solid var(--greyish-background-color);
+  border-radius: 4px;
+}
+
+.client-wrapper:hover .icon {
+  fill: var(--accent-color);
+}
+
+.client-wrapper:hover {
+  border-color: var(--accent-color);
+}
+
+.inner-wrapper {
+  width: 106px;
+  height: 60px;
+}
+
+.inner-wrapper .icon {
+  fill: var(--greyish-background-color);
+}
+
+.portfolio .button {
+  font-weight: 500;
+  line-height: 1.63;
+  text-align: center;
+  color: var(--title-text-color);
+  background-color: var(--lighter-background-color);
+  padding: 6px 22px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio .name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  margin-bottom: 4px;
+}
+
+.portfolio .type {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .item {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+.projects .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects .item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.projects .item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects .details {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px 19px;
+}
