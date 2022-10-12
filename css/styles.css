@@ -288,7 +288,6 @@ body {
 .hero {
   text-align: center;
   background-color: var(--light-background-color);
-  padding: 200px 0;
   margin: 0 auto;
 }
 
@@ -323,6 +322,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 200px 0;
+  margin: 0 auto;
 }
 
 .features .list,
