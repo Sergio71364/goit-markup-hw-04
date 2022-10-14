@@ -66,6 +66,7 @@ body {
 
 .header .icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon {
@@ -141,7 +142,6 @@ body {
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .list {
@@ -166,6 +166,12 @@ body {
   background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
 }
 
 .footer .address {
@@ -228,16 +234,11 @@ body {
   height: auto;
 }
 
-.footer .row {
-  justify-content: start;
-}
-
 .social .title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -248,7 +249,9 @@ body {
 .round-wrapper {
   width: 44px;
   height: 44px;
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
   outline: none;
@@ -272,23 +275,16 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer .col:not(:last-child) {
-  margin-right: 70px;
-}
-
-.row {
+.social-wrap {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
 
-.hero {
+.row .hero {
   text-align: center;
   background-color: var(--light-background-color);
   margin: 0 auto;
+  max-width: 1600px;
 }
 
 .hero .title {
@@ -346,11 +342,15 @@ body {
   margin-right: 30px;
 }
 
-.features .icon {
-  padding: 25px 100px;
+.features-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--lighter-background-color);
+  width: 270px;
+  height: 120px;
 }
 
 .features .title {
@@ -413,8 +413,17 @@ body {
   fill: var(--greyish-background-color);
 }
 
+.client-list-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
 .client-wrapper {
-  padding: 15px 31px;
+  height: 92px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--greyish-background-color);
   border-radius: 4px;
   outline: none;
