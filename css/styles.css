@@ -280,7 +280,7 @@ body {
   gap: 10px;
 }
 
-.row .hero {
+.hero {
   text-align: center;
   background-color: var(--light-background-color);
   margin: 0 auto;
@@ -295,6 +295,7 @@ body {
   max-width: 690px;
   margin: 0 auto;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
   margin-bottom: 30px;
 }
@@ -305,7 +306,6 @@ body {
   font-weight: 700;
   line-height: 1.88;
   padding: 10px 32px;
-  margin: 0 auto;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
